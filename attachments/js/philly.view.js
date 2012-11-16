@@ -67,6 +67,8 @@ $(document).ready(function() {
       if (data.submitted == true) {
         $("a#edit").attr("disabled", "true");
         $("a#edit").attr('href', '#');
+        $("a#delete").attr("disabled", "true");
+        $("a#delete").attr('href', '#');
       }
     }
   });
@@ -88,7 +90,9 @@ $(document).ready(function() {
         });
 
         //block.couchtools('update', {
+        //  base_url: phila.settings.url_prefix,
         //  db_name: phila.settings.db_name,
+        //  editor_id: 'none',
         //  doc_id: doc._id,
         //  filter_name: 'phila/id',
         //  actions: [phila.renderers.block.view]
